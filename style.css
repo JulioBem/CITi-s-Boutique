@@ -12,29 +12,29 @@ body {
 header {
     background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6dd2bd10-7bbf-4801-8ad9-6d9c6bdc236d%2FGrupo_15.png?table=block&id=c34ce017-864d-42e0-91fc-ee7d6f65fb38&width=600&userId=119f80a8-1090-47b3-8fe1-57e1f46f9e6b&cache=v2);
     background-repeat: no-repeat;
-    background-size: 100vw;
-    height: 600px;
+    background-size: 100%;
+    height: 37.5rem;
     width: 100%;
 }
 
 nav {
     display: flex;
-    height: 250px;
+    height: 15.625rem;
     width: 100%;
     justify-content: space-between;
 }
 
 #logo {
-    padding: 100px 0 0 150px;
+    padding: 6.25rem 0 0 9.375rem;
     width: 80%;
 }
 
 ul {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 1.875rem;
     list-style: none;
     align-self: center;
-    border-bottom: #fff 2px solid;
+    border-bottom: #fff 0.125rem solid;
 }
 
 ul > li > a {
@@ -44,11 +44,11 @@ ul > li > a {
 
 li {
     float: left;
-    padding: 0px 35px 35px 35px;
+    padding: 0px 2.1rem 2.1rem 2.1rem;
 }
 
 li:nth-child(3) {
-    padding-right: 0px;
+    padding-right: 1.2rem;
 }
 
 #jumbotron {
@@ -59,11 +59,11 @@ li:nth-child(3) {
 
 #title-jumbotron {
     color: #fff;
-    padding-right: 100px;
-    font-size: 70px;
+    padding-right: 6.25rem;
+    font-size: 4.375rem;
     font-weight: 100;
-    margin-top: 80px;
-    margin-right: 50px;
+    margin-top: 5rem;
+    margin-right: 3.125rem;
 }
 
 /* Produtos */
@@ -74,7 +74,7 @@ li:nth-child(3) {
     text-transform: uppercase;
     padding-top: 8rem;
     font-size: 4rem;
-    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
 }
 
 #produtos {
@@ -117,25 +117,25 @@ li:nth-child(3) {
 }
 
 .nome-item {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #35363A;
     position: absolute;
 }
 
 .nome-item > h3 {
-    padding: 25px 70px;
+    padding: 1.5rem 4.3rem;
 }
 
 #anel > .nome-item {
-    right: 925px;
+    right: 57.8rem;
 }
 
 #relogio > .nome-item {
-    right: 521px;
+    right: 32.5rem;
 }
 
 #colar > .nome-item {
-    right: 90px;
+    right: 5.6;
 }
 
 /*Contato*/
@@ -148,7 +148,7 @@ li:nth-child(3) {
 }
 
 #logo-black {
-    padding: 60px 80px;
+    padding: 3.75rem 5rem;
 }
 
 #logo-black > img {
@@ -156,14 +156,14 @@ li:nth-child(3) {
 }
 
 #social-media {
-    padding: 60px 80px;
+    padding: 3.75rem 5rem;
     display: flex;
     flex-direction: column;
 }
 
 #phone > img, #email > img, #instagram > img {
     width: 1.2rem;
-    margin: 0px 10px;
+    margin: 0px 0.62rem;
 }
 
 #phone > span, #email > span, #instagram > span {
@@ -182,4 +182,79 @@ footer {
 
 footer > p {
     margin-right: 3.75rem;
+}
+
+/* MEDIA */
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    header {
+        background-size: 100% 100%;
+        height: 40rem;
+    }
+
+    #logo {
+        width: 200px;
+        padding: 30px 0 0 30px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #title-jumbotron {
+        font-size: 3rem;
+        padding-right: 0;
+        margin-top: 15rem;
+        margin-right: 1rem;
+    }
+
+    /* Produto */
+    .section-title {
+        font-size: 3rem;
+    }
+
+    #items {
+        flex-direction: column;
+    }
+
+    #anel, #colar, #relogio {
+        display: flex;
+        justify-content: center;
+    }
+
+    #comprar-1 {
+        left: 5.5rem;
+        top: 76rem;
+    }
+
+    #comprar-2 {
+        left: 5.5rem;
+        top: 110rem;
+    }
+
+    #comprar-3 {
+        right: 5.5rem;
+        top: 145rem;
+    }
+
+    #relogio > .nome-item, #anel > .nome-item {
+        right: auto;
+    }
+
+    /* Contato */
+
+    #contato {
+        display: block;
+    }
+
+    #social-media {
+        padding: 55px auto;
+    }
+
+    /* Footer */
+    footer > p {
+        font-size: 1.3rem;
+        margin: auto;
+    }
 }
