@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/*Cabeçalho*/
+header {
+    background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6dd2bd10-7bbf-4801-8ad9-6d9c6bdc236d%2FGrupo_15.png?table=block&id=c34ce017-864d-42e0-91fc-ee7d6f65fb38&width=600&userId=119f80a8-1090-47b3-8fe1-57e1f46f9e6b&cache=v2);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 600px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#logo {
+    padding: 100px 0 0 150px;
+    width: 80%;
+}
+
+ul {
+    text-transform: uppercase;
+    font-size: 30px;
+    list-style: none;
+    align-self: center;
+    border-bottom: #fff 2px solid;
+}
+
+ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+    padding: 0px 35px 35px 35px;
+}
+
+li:nth-child(3) {
+    padding-right: 0px;
+}
+
+#jumbotron {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#title-jumbotron {
+    color: #fff;
+    padding-right: 100px;
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 80px;
+    margin-right: 50px;
+}
+
+/* Produtos */
+
+.section-title {
+    color: #B7AB9D;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 8rem;
+    font-size: 4rem;
+    padding-bottom: 60px;
+}
+
+#produtos {
+    width: 100%;
+    background-color: #35363A;
+    height: 100%;
+}
+
+#items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#anel > img, #relogio > img, #colar > img{
+    width: 18.75rem;
+    margin-bottom: 22.5rem;
+}
+
+.comprar {
+    background-color: #D6C2B7;
+    color: #35363A;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 0.9rem 2.5rem;
+    position: absolute;
+}
+
+#comprar-2 {
+    top: 75rem;
+}
+
+#comprar-1 {
+    left: 9rem;
+    top: 75rem;
+}
+
+#comprar-3 {
+    right: 9rem;
+    top: 75rem;
+}
+
+.nome-item {
+    font-size: 20px;
+    color: #35363A;
+    position: absolute;
+}
+
+.nome-item > h3 {
+    padding: 25px 70px;
+}
+
+#anel > .nome-item {
+    right: 925px;
+}
+
+#relogio > .nome-item {
+    right: 521px;
+}
+
+#colar > .nome-item {
+    right: 90px;
+}
+
+/*Footer*/
+footer {
+    background-color: #E7E9E6;
+    display: flex;
+    font-size: 1.5rem;
+    height: 3.75rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer > p {
+    margin-right: 3.75rem;
+}
