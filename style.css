@@ -86,6 +86,12 @@ li:nth-child(3) {
 #items {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#anel, #colar, #relogio {
+    display: flex;
+    justify-content: center;
 }
 
 #anel > img, #relogio > img, #colar > img{
@@ -102,18 +108,8 @@ li:nth-child(3) {
     position: absolute;
 }
 
-#comprar-2 {
-    top: 75rem;
-}
-
-#comprar-1 {
-    left: 9rem;
-    top: 75rem;
-}
-
-#comprar-3 {
-    right: 9rem;
-    top: 75rem;
+#comprar-1, #comprar-2, #comprar-3 {
+    margin-top: 350px;
 }
 
 .nome-item {
@@ -124,18 +120,6 @@ li:nth-child(3) {
 
 .nome-item > h3 {
     padding: 1.5rem 4.3rem;
-}
-
-#anel > .nome-item {
-    right: 57.8rem;
-}
-
-#relogio > .nome-item {
-    right: 32.5rem;
-}
-
-#colar > .nome-item {
-    right: 5.6;
 }
 
 /*Contato*/
@@ -218,38 +202,12 @@ footer > p {
         flex-direction: column;
     }
 
-    #anel, #colar, #relogio {
-        display: flex;
-        justify-content: center;
-    }
-
-    #comprar-1 {
-        left: 5.5rem;
-        top: 76rem;
-    }
-
-    #comprar-2 {
-        left: 5.5rem;
-        top: 110rem;
-    }
-
-    #comprar-3 {
-        right: 5.5rem;
-        top: 145rem;
-    }
-
-    #relogio > .nome-item, #anel > .nome-item {
-        right: auto;
-    }
-
     /* Contato */
 
     #contato {
-        display: block;
-    }
-
-    #social-media {
-        padding: 55px auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     /* Footer */
