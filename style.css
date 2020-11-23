@@ -42,6 +42,11 @@ ul > li > a {
     text-decoration: none;
 }
 
+ul > li > a:hover {
+    font-size: 1.9rem;
+    text-shadow: #35363A 1px 2px 2px;
+}
+
 li {
     float: left;
     padding: 0px 2.1rem 2.1rem 2.1rem;
@@ -104,13 +109,23 @@ li:nth-child(3) {
     margin-bottom: 10.5rem;
 }
 
+.comprar > a {
+    text-decoration: none;
+    color: #35363A;
+}
+
 .comprar {
     background-color: #D6C2B7;
-    color: #35363A;
     text-transform: uppercase;
     font-size: 2rem;
     padding: 0.9rem 2.5rem;
     position: absolute;
+}
+
+.comprar:hover {
+    transition: 0.2s all;
+    padding: 1rem 2.6rem;
+    box-shadow: #B7AB9D 0px 2px 3px;
 }
 
 #comprar-1, #comprar-2, #comprar-3 {
@@ -155,8 +170,10 @@ li:nth-child(3) {
     margin: 0px 0.62rem;
 }
 
-#phone > span, #email > span, #instagram > span {
+#phone > a, #email > a, #instagram > a {
     font-size: 1.3rem;
+    color: #35363A;
+    text-decoration: none;
 }
 
 /*Footer*/
@@ -303,6 +320,10 @@ footer > p {
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+
+    #social-media {
+        padding: 3.75rem 2rem;
     }
 
     /* Footer */
